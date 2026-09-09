@@ -14,14 +14,45 @@ Sistem Booking Sewa Lapangan Badminton ini adalah program berbasis CLI (Command 
    - Lalu sedari awal sistem mendaftarkan 4 data objek Lapangan ke dalam memori (Lapangan 1 & 2 jenis Vinyl, Lapangan 3 & 4 jenis            Wooden dengan harga Rp 60.000/jam).
 
 2. **Menu Utama:**
-   - Menggunakan perulangan while dan percabangan switch-case, program menampilkan menu interaktif (pilihan 1–5) hingga pengguna memilih menu keluar.
+   - Menggunakan perulangan while dan percabangan switch-case, program menampilkan menu interaktif (pilihan 1–6) hingga pengguna memilih menu keluar.
+
+      <img width="310" height="184" alt="image" src="https://github.com/user-attachments/assets/7c024424-0ac0-4589-8934-8b274dd9c8c5" />
 
 3. **Operasi Fitur Program & CRUD:**
    - **Tambah Customer (Pilihan 1):** Mengambil input idCustomer, namaCustomer, dan nomorHp, lalu menginstansiasi objek Customer baru ke dalam listCustomer.
+  
+     <img width="290" height="133" alt="image" src="https://github.com/user-attachments/assets/f6338049-4fa9-450d-bad5-ee09abf84c2b" />
+
    - **Tambah Booking Lapangan (Pilihan 2):** Mengambil input kodeBooking, idCustomer (penyewa), nomorLapangan, dan durasiJam, lalu menginstansiasi objek Booking ke dalam listBooking.
+     
+      <img width="242" height="145" alt="image" src="https://github.com/user-attachments/assets/4728a518-e28b-47a9-8e08-62d3bbc0c104" />
+
+   
    - **Tampilkan Semua Data (Pilihan 3):** Menampilkan daftar lapangan yang tersedia, daftar customer yang terdaftar, serta riwayat booking beserta kalkulasi total biayanya.
+
+     <img width="603" height="338" alt="image" src="https://github.com/user-attachments/assets/1288368b-2849-4221-874d-e46cacdf6ae2" />
+
    - **Hapus Booking (Pilihan 4):** Meminta input kodeBooking yang ingin dihapus, lalu menghapus objek dari listBooking jika ditemukan.
-   - **Keluar (Pilihan 5):** Menghentikan perulangan program dan menutup akses Scanner.
+     
+     <img width="611" height="350" alt="image" src="https://github.com/user-attachments/assets/6d32da6b-982f-493f-a7f3-b2a77523a9d7" />
+     
+     daftar booking setelah dihapus :
+     
+     <img width="243" height="76" alt="image" src="https://github.com/user-attachments/assets/fb38147a-aa4f-43f0-8aa9-7259c83f3ddb" />
+
+     
+   - **Keluar (Pilihan 5):** Meminta input kode booking yang ingin diubah, lalu meminta seluruh data sekaligus tanpa menanyakan data mana yang ingin diubah agar menyederhanakan sistem di kode.
+
+      <img width="615" height="437" alt="image" src="https://github.com/user-attachments/assets/c40282c4-b781-42f8-8b6f-e2d95d2e6044" />
+
+      Hasil setelah diganti:
+
+      <img width="609" height="90" alt="image" src="https://github.com/user-attachments/assets/d4ff9693-e36c-49a8-9571-82e186919fd1" />
+
+   - **Keluar (Pilihan 6):** Menghentikan perulangan program dan menutup akses Scanner.
+  
+     <img width="526" height="312" alt="image" src="https://github.com/user-attachments/assets/2ba62046-dbf4-424e-8983-e55466ac0658" />
+
 
      
 ## Penjelasan Letak Penerapan Nilai Tambah
