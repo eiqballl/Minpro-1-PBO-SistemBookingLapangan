@@ -31,7 +31,7 @@ public class MiniProjectSatu {
         Scanner input = new Scanner(System.in);
         int pilihan = 0;
 
-        while (pilihan != 5) {
+        while (pilihan != 6) {
             System.out.println("\n=========================================");
             System.out.println("=== SISTEM BOOKING LAPANGAN BADMINTON ===");
             System.out.println("=========================================");
@@ -39,7 +39,8 @@ public class MiniProjectSatu {
             System.out.println("2. Tambah Booking Lapangan ");
             System.out.println("3. Tampilkan Semua Data ");
             System.out.println("4. Hapus Booking ");
-            System.out.println("5. Keluar");
+            System.out.println("5. Update Booking");
+            System.out.println("6. Keluar");
             System.out.print("Pilih Menu (1-5): ");
             pilihan = input.nextInt();
             input.nextLine(); 
@@ -127,8 +128,39 @@ public class MiniProjectSatu {
                     }
                     if (!adaHapus) System.out.println("Kode Booking tidak ditemukan!");
                     break;
-
+                
                 case 5:
+                System.out.println("\n=======================");
+                    System.out.println("=== UPDATE BOOKING ===");
+                    System.out.println("=======================");
+                    System.out.print("Masukkan Kode Booking yang ingin diubah: ");
+                    String kodeEdit = input.nextLine();
+                    boolean adaEdit = false;
+
+                    for (Booking b : listBooking) {
+                        if (b.kodeBooking.equalsIgnoreCase(kodeEdit)) {
+                            System.out.println("Data ditemukan! Masukkan data baru:");
+                            
+                            System.out.print("ID Customer Baru         : ");
+                            b.idCustomer = input.nextLine();
+                            
+                            System.out.print("Nomor Lapangan Baru      : ");
+                            b.nomorLapangan = input.nextInt();
+                            
+                            System.out.print("Durasi Main (Jam) Baru   : ");
+                            b.durasiJam = input.nextInt();
+
+                            System.out.println("Data booking berhasil diperbarui!");
+                            adaEdit = true;
+                            break;
+                        }
+                    }
+                    if (!adaEdit) {
+                        System.out.println("Kode Booking tidak ditemukan!");
+                    }
+                    break;
+                
+                case 6:
                     System.out.println("\nProgram selesaiii, terima kasih!");
                     break;
 
